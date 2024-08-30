@@ -1,0 +1,55 @@
+@media (max-width: 800px) {
+    #encantos-logo {
+        display: none;
+    }
+    * {
+    overflow-x: hidden;    
+    }
+    .div-5 {
+        background-image: url(/assets/footerBook.png);
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 2;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-1 {
+        flex: 1;
+    }
+    .footer-2 {
+        flex: 2;
+    }
+    .card-wrapper {
+        width: 100%;
+        box-shadow: none;
+        height:max-content;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        gap: 20px;
+        padding-top: 50px;
+    }
+    .card-1{
+        position: static;
+        rotate: 0deg;
+    }
+    .card-2{
+        position: static;}
+    .card-3{
+        position: static;
+        rotate: 0deg;
+        width: max-content;
+        height: max-content;
+    }
+    #Bunny, #Star1, #Star2, #BStar1, #BStar2 {
+        display: none;
+    }
+    .div-3 {
+        img {
+            scale: 0.4;
+        }
+    }
+}

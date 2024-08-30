@@ -1,0 +1,212 @@
+.div-4 {
+    background-image: url(/assets/Image-1.png);
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    padding-bottom: 600px;
+    margin-top: 200px;
+}
+.card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid; */
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    box-shadow: 0 0 800px 1px var(--blue-dark);
+}
+.card-title {
+    margin-bottom: 200px;
+    font-size: 24px;
+}
+.card-1, .card-2, .card-3 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: var(--shape-base);
+    border: 1px solid var(--shape-stroke);
+    padding: 32px;
+    border-radius: 20px;
+    height: 416px;
+    width: 300px;
+    transition: all .5s;
+    img {
+        height: 14px;
+        margin-right: 8px;
+    }
+    button {
+        width: 100%;
+        border: none;
+        padding: 12px;
+        border-radius: 12px;
+        margin-top: 12px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 1s;
+    }
+    .cardBody {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    h3 {
+        margin-top: 24px;
+        margin-bottom: 8px;
+    }
+}
+.cardBody p {
+    font-size: 13px;
+    color: var(--text-label);
+}
+.porAno {
+    color: var(--text-label);
+}
+.cardHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    margin-bottom: auto;
+}
+.priceMonth {
+    display: flex;
+    align-items: baseline;
+}
+.priceMonth h3 {
+    font-size: 46px;
+}
+.popular {
+    display: flex;
+    font-weight: 700;
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    /* border: 1px solid red; */
+    position: relative;
+    align-items: center;
+    gap: 75px;
+}
+.popular p {
+    flex: 1;
+    color: var(--pink-light);
+}
+.popular span {
+    flex: 1;
+    font-size: 10px;
+    background-color: var(--shape-stroke);
+    padding: 8px 16px;
+    border-radius: 12px;
+}
+.card-1, .card-3 {
+    button {
+        background-color: var(--blue-dark);
+    }
+    button:hover {
+        transition: background-color 1s;
+        background-color: var(--blue-light);
+    }
+    img {
+        filter: brightness(0) saturate(100%) invert(42%) sepia(69%) saturate(428%) hue-rotate(156deg) brightness(100%) contrast(94%);
+    }
+    .cardHeader p {
+        color: var(--blue-light);
+        font-weight: 700;
+    }
+    .cardHeader .porAno {
+        color: var(--text-label);
+        font-weight: 300;
+    }
+}
+.card-2 {
+    position: relative;
+    button {
+        background-color: var(--pink-dark);
+    }
+    button:hover {
+        background-color: var(--pink-light);
+        transition: background-color 1s;
+    }
+    img {
+        filter: brightness(0) saturate(100%) invert(36%) sepia(7%) saturate(5165%) hue-rotate(245deg) brightness(97%) contrast(90%);
+    }
+}
+.card-1 {
+    z-index: 2;
+    rotate: -10deg;
+    position: absolute;
+    right: 250px;
+    top: 0;
+}
+#Star1 {
+    position: absolute;
+    top: 10px;
+    left: -35px;
+    transition: all 1s;
+    filter: brightness(0) saturate(100%) invert(32%) sepia(14%) saturate(3943%) hue-rotate(251deg) brightness(102%) contrast(84%);
+}
+#Star2 {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    height: 30px;
+    transition: all 1s;
+    filter: brightness(0) saturate(100%) invert(32%) sepia(14%) saturate(3943%) hue-rotate(251deg) brightness(102%) contrast(84%);
+}
+.card-2 {
+    z-index: 3;
+    position: absolute;
+    top: -50px;
+}
+#Bunny {
+    position: absolute;
+    top: -50px;
+    height: 50px;
+}
+.card-3 {
+    z-index: 1;
+    rotate: 10deg;
+    left: 250px;
+    position: absolute;
+    top: 0;
+}
+#BStar1{
+    position: absolute;
+    bottom: 10px;
+    right: -35px;
+    transition: all 1s;
+}
+#BStar2{
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    height: 30px;
+    transition: all 1s;
+}
+.card-1:hover, .card-2:hover, .card-3:hover {
+    background-color: var(--shape-hover);
+    box-shadow: 0 0 50px 1px var(--blue-dark);
+    transform: translateY(-20px);
+    z-index: 4;
+    transition: all .5s;
+}
+.card-1:hover {
+    #Star1 {
+        rotate: 45deg;
+        transition: all 1s;
+    }
+    #Star2 {
+        rotate: 45deg;
+        transition: all 1;
+    }
+}
+.card-3:hover {
+    #BStar1{
+        rotate: 45deg;
+        transition: all 1s;
+    }
+    #BStar2{
+        rotate: 45deg;
+        transition: all 1s;
+    }
+}

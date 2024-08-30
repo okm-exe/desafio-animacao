@@ -1,0 +1,65 @@
+.div-5 {
+    background-image: url(/assets/footerBook.png);
+    display: flex;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    height: 415px;
+}
+footer {
+    display: flex;
+    width: 100%;
+    margin: 10%;
+}
+.footer-1 {
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.footer-1 hr {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: var(--shape-stroke);
+}
+.socials {
+    display: flex;
+    gap: 8px;
+}
+
+.socials img{
+    padding: 8px;
+}
+.socials img:hover {
+    background-color: var(--shape-stroke);
+    padding: 8px;
+    border-radius: 50%;
+}
+.footer-2 {
+    display: flex;
+    gap: 48px;
+}
+.footer-2 a {
+    text-decoration: none;
+    color: var(--blue-light);
+    transition: color .3s;
+}
+.footer-2 a:hover {
+    color: var(--text-head);
+    transition: color .3s;
+}
+.footer-2 .content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 16px;
+}
+.footer-2 .help {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 16px;
+}
